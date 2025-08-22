@@ -80,10 +80,10 @@ const markup = images
   </a>
 </li>`;
   })
-   .join('');
-  
+  .join('');
+
 galleryRef.innerHTML = markup;
-   
+
 galleryRef.addEventListener('click', onGalleryClick);
 
 function onGalleryClick(event) {
@@ -101,11 +101,3 @@ function onGalleryClick(event) {
 
   instance.show();
 }
-
-const instance = basicLightbox.create(`
-  <img src="large-image.jpg" width="800" height="600">
-`);
-
-instance.show();
-
-
